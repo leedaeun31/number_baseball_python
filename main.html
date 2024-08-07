@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>수강신청 사이트</h1>
+        <nav>
+            <ul>
+                <li><a href="#">홈</a></li>
+                <li><a href="#">강좌 목록</a></li>
+                <li><a href="#">문의하기</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="course-form">
+            <h2>수강신청</h2>
+            <form action="submit.html" method="post">
+                <label for="name">이름:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">이메일:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="course">강좌 선택:</label>
+                <select id="course" name="course" required>
+                    <option value="">강좌를 선택하세요</option>
+                    <option value="course1">강좌 1</option>
+                    <option value="course2">강좌 2</option>
+                    <option value="course3">강좌 3</option>
+                </select>
+
+                <input type="submit" value="신청하기">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 수강신청 사이트. All rights reserved.</p>
+    </footer>
+</body>
+</html>
